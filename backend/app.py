@@ -22,11 +22,14 @@ def predict():
     try:
         data = request.get_json()
 
-        study_hours = float(data['study_hours'])
-        sleep_hours = float(data['sleep_hours'])
-        previous_score = float(data['previous_score'])
+        study = float(data['study_hours'])
+        attendance = float(data['attendance'])
+        previous = float(data['previous_score'])
+        sleep = float(data['sleep_hours'])
 
-        features = np.array([[study_hours, sleep_hours, previous_score]])
+        # ✅ 4 FEATURES (IMPORTANT)
+        features = np.array([[study, attendance, previous, sleep]])
+
         prediction = model.predict(features)[0]
 
         return jsonify({
@@ -34,9 +37,7 @@ def predict():
         })
 
     except Exception as e:
-        return jsonify({
-            "error": str(e)
-        }), 400
+        return jsonify({"error": str(e)}), 400
 
 
 if __name__ == "__main__":
