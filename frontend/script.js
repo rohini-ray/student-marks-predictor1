@@ -1,5 +1,4 @@
 async function predictMarks() {
-    // Get input values
     const study = document.getElementById("study").value;
     const attendance = document.getElementById("attendance").value;
     const previous = document.getElementById("previous").value;
@@ -7,25 +6,24 @@ async function predictMarks() {
 
     const result = document.getElementById("result");
 
-    // Basic validation
     if (!study || !attendance || !previous || !sleep) {
         result.innerText = "⚠️ Please fill all fields!";
         return;
     }
 
     try {
-        const response = await fetch("https://student-marks-api.onrender.com/predict", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        study_hours: study,
-        attendance: attendance,
-        previous_score: previous,
-        sleep_hours: sleep
-    })
-});
+        const response = await fetch("https://student-marks-predictor1.onrender.com/predict", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                study_hours: parseFloat(study),
+                attendance: parseFloat(attendance),
+                previous_score: parseFloat(previous),
+                sleep_hours: parseFloat(sleep)
+            })
+        });
 
         const data = await response.json();
 
