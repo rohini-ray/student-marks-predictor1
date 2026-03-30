@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>🎯 Student Marks Predictor</h1>
+
+        <div class="form-group">
+            <label>Study Hours</label>
+            <input type="number" id="study" placeholder="Enter study hours">
+        </div>
+
+        <div class="form-group">
+            <label>Attendance (%)</label>
+            <input type="number" id="attendance" placeholder="Enter attendance">
+        </div>
+
+        <div class="form-group">
+            <label>Previous Marks</label>
+            <input type="number" id="previous" placeholder="Enter previous marks">
+        </div>
+
+        <div class="form-group">
+            <label>Sleep Hours</label>
+            <input type="number" id="sleep" placeholder="Enter sleep hours">
+        </div>
+
+        <button onclick="predictMarks()">Predict</button>
+
+        <h2 id="result">Predicted Marks:</h2>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
