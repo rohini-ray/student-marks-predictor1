@@ -1,13 +1,12 @@
-# student-marks-predictor1
-🎓 Students Marks Predictor
+# 🎓 Students Marks Predictor
 
-"Python" (https://img.shields.io/badge/Python-3.x-blue)
-"Machine Learning" (https://img.shields.io/badge/Machine%20Learning-Regression-orange)
-"Status" (https://img.shields.io/badge/Status-Completed-success)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Regression-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-📌 Project Overview
+## 📌 Project Overview
 
-Students Marks Predictor is a Machine Learning based application that predicts students' marks based on various academic and performance-related factors.
+**Students Marks Predictor** is a Machine Learning based application that predicts students' marks based on various academic and performance-related factors.
 
 The project uses data preprocessing, exploratory data analysis, and regression algorithms to analyze student data and predict expected marks accurately.
 
@@ -15,16 +14,16 @@ This project demonstrates the complete Machine Learning workflow from data colle
 
 ---
 
-🎯 Objectives
+## 🎯 Objectives
 
-- Predict student marks using Machine Learning algorithms
-- Analyze factors affecting student performance
-- Build a data-driven academic prediction system
-- Provide accurate predictions using trained ML models
+* Predict student marks using Machine Learning algorithms
+* Analyze factors affecting student performance
+* Build a data-driven academic prediction system
+* Provide accurate predictions using trained ML models
 
 ---
 
-🚀 Features
+## 🚀 Features
 
 ✅ Data Cleaning and Preprocessing
 ✅ Exploratory Data Analysis (EDA)
@@ -36,37 +35,38 @@ This project demonstrates the complete Machine Learning workflow from data colle
 
 ---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-Programming Language
+### Programming Language
 
-- Python
+* Python
 
-Machine Learning Libraries
+### Machine Learning Libraries
 
-- NumPy
-- Pandas
-- Scikit-learn
+* NumPy
+* Pandas
+* Scikit-learn
 
-Data Visualization
+### Data Visualization
 
-- Matplotlib
-- Seaborn
+* Matplotlib
+* Seaborn
 
-Development Tools
+### Development Tools
 
-- Jupyter Notebook
-- VS Code
-- Git & GitHub
+* Jupyter Notebook
+* VS Code
+* Git & GitHub
 
-Deployment
+### Deployment
 
-- Flask (Web Application)
+* Flask (Web Application)
 
 ---
 
-📂 Project Structure
+# 📂 Project Structure
 
+```
 Students-Marks-Predictor/
 │
 ├── Dataset/
@@ -85,185 +85,218 @@ Students-Marks-Predictor/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
+```
 
 ---
 
-🧠 Machine Learning Workflow
+# 🧠 Machine Learning Workflow
 
-1. Data Collection
+## 1. Data Collection
 
 The dataset contains student academic information such as:
 
-- Study Hours
-- Previous Scores
-- Attendance
-- Practice Tests
-- Other performance factors
+* Study Hours
+* Previous Scores
+* Attendance
+* Practice Tests
+* Other performance factors
 
 ---
 
-2. Data Preprocessing
+## 2. Data Preprocessing
 
 Performed operations:
 
-- Handling missing values
-- Removing duplicate data
-- Data transformation
-- Feature selection
-- Train-test splitting
+* Handling missing values
+* Removing duplicate data
+* Data transformation
+* Feature selection
+* Train-test splitting
 
 ---
 
-3. Exploratory Data Analysis
+## 3. Exploratory Data Analysis
 
 Data visualization techniques:
 
-- Correlation Heatmap
-- Distribution Analysis
-- Feature Relationship Analysis
+* Correlation Heatmap
+* Distribution Analysis
+* Feature Relationship Analysis
 
 ---
 
-4. Model Training
+## 4. Model Training
 
 Machine Learning algorithms used:
 
-- Linear Regression
-- Decision Tree Regression
-- Random Forest Regression
+* Linear Regression
+* Decision Tree Regression
+* Random Forest Regression
 
 The best performing model is selected for prediction.
 
 ---
 
-📊 Model Evaluation
+# 📊 Model Evaluation
 
 The model performance is evaluated using:
 
-Mean Absolute Error (MAE)
+### Mean Absolute Error (MAE)
 
 Measures average prediction error.
 
-Mean Squared Error (MSE)
+### Mean Squared Error (MSE)
 
 Measures squared difference between actual and predicted values.
 
-R² Score
+### R² Score
 
 Shows how accurately the model explains student performance.
 
 Example:
 
+```
 Model Accuracy:
 R² Score: 0.90+
+```
 
 ---
 
-⚙️ Installation & Setup
+# ⚙️ Installation & Setup
 
-Clone Repository
+## Clone Repository
 
+```bash
 git clone https://github.com/yourusername/Students-Marks-Predictor.git
+```
 
-Navigate to Project Directory
+## Navigate to Project Directory
 
+```bash
 cd Students-Marks-Predictor
+```
 
-Create Virtual Environment
+## Create Virtual Environment
 
+```bash
 python -m venv venv
+```
 
 Activate Environment:
 
-Windows
+### Windows
 
+```bash
 venv\Scripts\activate
+```
 
-Linux/Mac
+### Linux/Mac
 
+```bash
 source venv/bin/activate
+```
 
 ---
 
-Install Dependencies
+## Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 ---
 
-▶️ Run Application
+# ▶️ Run Application
 
 Start Flask server:
 
+```bash
 python app.py
+```
 
 Open browser:
 
+```
 http://127.0.0.1:5000/
+```
 
 ---
 
-🔮 Sample Prediction
+# 🔮 Sample Prediction
 
-Input
+### Input
 
+```
 Study Hours: 7
 Previous Score: 85
 Attendance: 90
 Practice Tests: 8
+```
 
-Output
+### Output
 
+```
 Predicted Marks: 92
+```
 
 ---
 
-📈 Future Enhancements
+# 📈 Future Enhancements
 
-- Deep Learning based prediction
-- AI-based personalized study recommendations
-- Student performance dashboard
-- Mobile application integration
-- Cloud deployment
-- Real-time analytics
+* Deep Learning based prediction
+* AI-based personalized study recommendations
+* Student performance dashboard
+* Mobile application integration
+* Cloud deployment
+* Real-time analytics
 
 ---
 
-👨‍💻 Author
+# 👨‍💻 Author
 
-Your Name
+**Your Name**
 
 GitHub:
 
+```
 https://github.com/yourusername
+```
 
 LinkedIn:
 
+```
 https://linkedin.com/in/yourusername
+```
 
 ---
 
-🤝 Contribution
+# 🤝 Contribution
 
 Contributions are welcome!
 
 1. Fork this repository
 2. Create a new branch
 
+```bash
 git checkout -b feature-name
+```
 
 3. Commit your changes
 
+```bash
 git commit -m "Added new feature"
+```
 
 4. Push changes
 
+```bash
 git push origin feature-name
+```
 
 5. Create a Pull Request
 
 ---
 
-📜 License
+# 📜 License
 
 This project is licensed under the MIT License.
