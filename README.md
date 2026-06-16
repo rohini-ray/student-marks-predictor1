@@ -69,23 +69,60 @@ This project demonstrates the complete Machine Learning workflow from data colle
 ```
 Students-Marks-Predictor/
 │
-├── Dataset/
-│   └── student_data.csv
-│
-├── Model/
-│   └── model.pkl
-│
-├── Templates/
-│   └── index.html
-│
-├── Static/
-│   └── style.css
-│
-├── app.py
-├── requirements.txt
+├── .gitattributes
+├── .gitignore
+├── LICENSE
 ├── README.md
-└── LICENSE
+│
+├── backend/
+│ │
+│ ├── app.py
+│ ├── model.pkl
+│ └── requirements.txt
+│
+└── frontend/
+│
+├── index.html
+├── script.js
+└── style.css
 ```
+
+
+## 📁 Directory Description
+
+### 🔹 backend/
+
+Contains the Machine Learning model and backend API implementation.
+
+| File | Description |
+|------|-------------|
+| `app.py` | Flask backend application that loads the trained ML model and predicts student marks based on user input |
+| `model.pkl` | Saved Machine Learning regression model used for marks prediction |
+| `requirements.txt` | Python dependencies required to run the backend application |
+
+---
+
+### 🔹 frontend/
+
+Contains the user interface for entering student details and displaying predicted marks.
+
+| File | Description |
+|------|-------------|
+| `index.html` | Webpage structure containing input fields and prediction interface |
+| `style.css` | Frontend styling and responsive UI design |
+| `script.js` | Handles user interactions and connects frontend with backend API |
+
+---
+
+### 🔹 Root Files
+
+| File | Description |
+|------|-------------|
+| `.gitignore` | Specifies files ignored by Git |
+| `.gitattributes` | Git repository configuration settings |
+| `LICENSE` | Project license information |
+| `README.md` | Project documentation |
+
 
 ---
 
